@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <link href="../css/tytel.css" rel="stylesheet"> -->
+    <script src="pay.js" defer></script>
+    <link href="./Pages.css" rel="stylesheet" type="text/css">
+    <title>תשלום</title>
+</head>
+<!-- <style>
+  main{
+    background: white;
+  }
+</style> -->
+<style>
+  main{
+    text-align: center;
+  }
+  :root {
+      direction: rtl;
+      color: white;
+  }
+
+  body {
+      background: linear-gradient(50deg, #010101, #2a2a2a, #5c5c5c);
+  }
+
+  h1 {
+      font-size: 4rem;
+      background-image: linear-gradient(120deg, rgb(220, 203, 13), rgb(194, 111, 9), rgb(172, 7, 7), rgb(220, 203, 13), rgb(194, 111, 9), rgb(172, 7, 7));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      width: 100px;
+  }
+
+  
+  fieldset:nth-child(3),
+  fieldset:nth-child(2) {
+    text-align: center;
+      width: 100%;
+      display: flex;
+      /* overflow-x: scroll; */
+      gap: 8px;
+      flex-direction: row;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+  }
+
+ 
+</style>
+<body dir="rtl">
+  <header>
+    <nav class="link">
+        <a  href="cart.html" title="סל קניות">
+            <img class="cart"  src="../איכונים/cart.svg">
+        </a>
+        <!-- <a class="e" href="Contact.html" target="f1">חנות</a>| -->
+        <a class="e" href="Shop Detail.html" target="f1">תפריט</a>|
+        <a class="e" href="../Home.html" target="f1">בית</a>|
+        <a class="e" id="cart" class="conect" href="conect.html" target="f1">התחברות</a>|
+        <a class="e" id="cart" class="conect" href="register.html" target="f1">הרשמה</a>
+      
+        
+    </nav>
+</header>
+<main>
+      
+        <form method="post" >
+          
+          <fieldset >
+              
+              <legend>תשלום:</legend>
+              <div id="from">
+                <p>סה"כ לתשלום:</p>
+                <p></p >
+              </div>
+              <div>
+                  <!-- <h2>פרטים אישיים</h2> -->
+                  <p>שם בעל הכרטיס:</p>
+                  <input id="cardHolderName" type="text" class="form-control" autocomplete
+                  required>
+                  
+              </div>
+              <div>
+                  
+                  <p> תעודת זהות:</p>
+                  <input id="password" type="password" aria-label="סיסמא" name="2" autocomplete
+                  required>
+              </div>
+                            <div>
+                
+                <p>מספר פלאפון:</p>
+                <input type="tel" id="tel" name="1"  placeholder="הכניסי מספר טלפון" autocomplete
+                      required>
+            </div>
+            <div>
+              
+              <p>מייל:</p>
+          <input type="email" id="email" autocomplete="off">
+          </div>
+          <div>
+            
+            <p>מספר כרטיס אשראי</p>
+            <input id="cardNumber" type="text" class="form-control" autocomplete>
+        </div>
+        <div>
+          
+          <p>תוקף</p>
+          <input id="expiryDate" type="date" class="form-control" autocomplete
+          required>
+      </div>
+      <div>
+        
+        <p>שלוש ספרות בגב הכרטיס</p>
+        <input id="cvv" type="number" class="form-control" autocomplete>
+          
+      </div>
+      <br/>
+    </div>
+    
+              
+    <div class="container">
+      <button onclick="chekcard()" class="btn">אישור</button>
+    </div>
+          </fieldset>
+          
+      </form>
+      
+  </main>
+  <footer>
+    
+  </footer>
+</body>
+</html>

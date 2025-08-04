@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="./pages/Pages.css" rel="stylesheet" type="text/css">
+    <link rel="incon" href="images/discount-item-4.png">
+    <!-- <a  href="pages/cart.html" >
+        <img class="cart"  id="s" src="איכונים/hand-back-fist.svg">
+       
+    </a> -->
+    <script src="./pages/home.js" defer></script>
+    <style>
+        img {
+            /* aspect-ratio: 3/2; */
+            aspect-ratio: 90/80;
+            width: 80vw;
+            border: 1px black solid;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            /* padding: 16px,23px; */
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+            /* border: radius 50px; */
+
+        }
+
+        .prev {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            /* border: radius 50px; */
+
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .slide {
+            width: min-content;
+            /* מיישר את האובייקט למרכז */
+            margin: 0 auto;
+            position: relative;
+
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <!-- <button id="stop"onclick="continio()">עצור חילוף תמונות
+    </button> -->
+    <header>
+        <nav class="link">
+            <a class="e" href="Home.html" target="f1">בית</a>|
+            <a class="e" href="pages/Shop Detail.html" target="f1">תפריט</a>
+            |
+            <a class="e" href="pages/register.html" target="f1">הרשמה</a>
+            |
+            <a id="cart" class="e" href="pages/conect.html" target="f1">התחברות</a>|
+            
+            
+            <!-- <div> -->
+                
+            <a  href="pages/cart.html" title="סל קניות">
+                <img class="cart"  src="איכונים/cart.svg">
+            </a>
+        <!-- </div> -->
+            
+        </nav>
+
+    </header>
+    
+    <main>
+        <div id="div" class="slide">
+            <img id="p" src="./images/אוכל מקסיקני.jpg" width="300px" alt="תמונה" />
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+           
+        </div>
+        
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

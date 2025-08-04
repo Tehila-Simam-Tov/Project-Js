@@ -1,0 +1,91 @@
+/* עיצוב הטבלה */
+.table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    
+}
+
+
+.table thead th {
+    background-color:  hsl(29, 85%, 23%);
+    color: #fff;
+    padding: 12px;
+    
+}
+
+/* עיצוב תאי הטבלה */
+.table td {
+    padding: 8px;
+    
+    text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f4e4ec;
+}
+
+/* צבע רקע לשורה כשמעבירים מעליה את העכבר */
+/* .table tbody th tr:hover {
+    background-color:  hsl(29, 85%, 23%);
+} */
+
+/* עיצוב תמונה בתא */
+.table img {
+    max-width: 100px;
+    /* גודל מקסימלי של התמונה */
+    height: auto;
+    border-radius: 5px;
+    /* פינות מעוגלות */
+}
+
+/* עיצוב כפתורים */
+.table .btn {
+    color: #ffffff;
+    background-color: hsl(29, 85%, 23%);
+    border-color: hsl(29, 85%, 23%);
+    margin: 0 2px;
+    font-size: 0.8rem;
+}
+
+/* עיצוב כפתור למחיקת פריט */
+.table .btn svg {
+    vertical-align: middle;
+    fill: #ffffff;
+    /* צבע אייקון */
+}
+
+/* עיצוב כותרת עמודה ריקה */
+.table th:last-child {
+    width: 80px;
+    /* רוחב לתא ריק */
+}
+tfoot {
+    background-color: #f4e4ec; 
+    font-weight: bold;
+    border-color: inherit;
+}
+
+tfoot td {
+    padding: 10px;
+    border-color: inherit; 
+   
+}
+
+/* tfoot .text-right {
+    text-align: right; 
+} */
+/* .t tr:nth-child(even){background-color: #f2f2f2;}*/
+
+
+tr :hover{
+    background-color: #ddd;
+}
+tr :nth-child(even){
+    background-color: #f2f2f2;
+}
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+

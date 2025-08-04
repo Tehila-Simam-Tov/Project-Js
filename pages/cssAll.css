@@ -1,0 +1,52 @@
+* {
+    text-align: center;
+}
+
+.container {
+    /*max-width: 1200px; /* רוחב מרבי של הקונטיינר */
+    margin: 0 auto;
+}
+
+
+.nav-tabs {
+    background-color: #ea267f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* footer {
+    background-color: #f5d0e5;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* header {
+    background-color: #F4E4EC;
+    padding: 10px;
+    text-align: center;
+     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+} */
+
+.nav-tabs .nav-link {
+    color: #fff;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #f27cbd;
+    border-color: #f27cbd;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+}
